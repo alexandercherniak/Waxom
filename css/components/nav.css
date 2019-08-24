@@ -1,0 +1,32 @@
+.nav {
+  word-spacing: 22px;
+  letter-spacing: 0.33px;
+  font-size: 13px;
+  line-height: 35px;
+  margin: 0 auto;
+  padding: 0 30px;
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.nav-item {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0, 10px;
+  color: #ffffff;
+}
+.nav-item:hover {
+  text-decoration: none;
+  color: #998675;
+}
+
+.nav-item.is-active {
+  color: #998675;
+  text-decoration: none;
+}
+
+.nav-footer {
+  padding: 0;
+  margin: 0;
+  word-spacing: 5px;
+}

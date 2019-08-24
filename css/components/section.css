@@ -4,14 +4,13 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: content-box;
-  width: 1170px; 
+  width: 100vh; 
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .section-hero .container {
   max-width: 1920px;
-  height: 100%;
 }
 
 .section-hero .section-foreground {
@@ -19,14 +18,13 @@
 }
 
 .section-foreground {
-  color: #ffffff;
   display: flex;
   flex-direction: column;
 }
 
 .section-hero .section-body {
   padding: 381px 0;
-  width: 600px;
+  max-width: 640px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -34,6 +32,7 @@
   align-items: center;
   flex-grow: 1;
   text-align: center;
+  color: #ffffff;
 }
 
 .section {
@@ -41,21 +40,28 @@
   padding: 20px 0;
 }
 
-.section-title {
-  width: 589px;
+.section-hero .section-title {
+  max-width: 589px;
   height: 50px;
   font-family: "Raleway - Extra Bold";
   font-size: 52px;
   font-weight: 400;
+  margin-bottom: 15px;
 }
 
-.section-subtitle {
+.section-hero .section-subtitle {
+  font-family: Raleway;
   font-size: 36px;
   font-weight: 500;
+  margin-bottom: 0;
 }
 
-.section-description {
-  margin-bottom: 15px;
+.section-hero .section-description {
+  margin-bottom: 50px;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
 }
  
 .section-background {
@@ -83,25 +89,21 @@
   z-index: -1;
 }
 
-.section-hero {
-  color: #ffffff;
-}
-
-/*video*/
-.section-video .container {
+/*services*/
+.section-services .container {
   min-height: 550px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.section-video .section-description {
+.section-services .section-description {
   font-size: 16px;
   padding: 15px;
   text-transform: uppercase;
 }
 
-.section-video .icon {
+.section-services .icon {
   display: flex;
   justify-content: center;
   align-items: center;
