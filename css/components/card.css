@@ -20,12 +20,12 @@
   margin: 0;
 }
 
-.card-cover {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+.grid-services .card-description {
+  color: #8c8c8c;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
 .card-header {
@@ -51,18 +51,83 @@
   align-items: center;
 }
 
+.card-is-active .card-cover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 28, 28, 0.671);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card-body {
-  background: gray;
+  display: block;
+  width: 100%;
+  padding: 15px;
+}
+
+.section-projects .card-body {
   color: #ffffff;
-  padding: 20px;
+  background: gray;
   text-transform: uppercase;
 }
 
-.card:hover .card-cover {
+.card .card-date {
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  bottom: 140px;
+  left: 20px;
+  display: block;
+  max-width: 50px;
+  max-height: 50px;
+  color: #ffffff;
+}
+
+.card .read-more {
+  color: #c7b299;
+}
+
+.card-cover .card-date {
+  position: absolute;
+  top: 20px;
+  right: 300px;
+  bottom: 140px;
+  left: 20px;
+  display: block;
+  max-width: 50px;
+  max-height: 50px;
+  color: #ffffff;
+}
+
+.card-date-top {
+  background-color: #363636;
+}
+
+.card-date-bottom {
+  background-color: #252525;
+}
+
+.card:hover .card-title, .card-is-active .card-title, .card-is-active .icon {
+  color: #c7b299;
+}
+
+.card:hover .card-date-top, .card-is-active .card-date-top {
+  background-color: #c7b299;
+}
+
+.card:hover .card-date-bottom, .card-is-active .card-date-bottom {
+  background-color: #a48d72;
+}
+
+.card:hover .card-cover, .card-is-active .card-cover {
   display: flex;
 }
 
-.card:hover .card-body {
+.card:hover .card-body, .card-is-active .card-body {
   background: #998675;
 }
 

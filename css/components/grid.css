@@ -1,14 +1,104 @@
 .grid {
   display: flex;
+  flex-wrap: wrap;
   margin: 0 -10px;
   padding: 0;
   list-style: none;
 }
 
-.grid-projects .grid-item {
+.grid-services .grid-item {
+  padding: 15px;
+}
+
+.grid-buttons {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  flex-basis: 33.33%;
-  padding: 0;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
 }
+
+.grid-buttons .grid-item {
+  padding: 5px; 
+}
+
+.grid-projects .grid-item {
+  flex-basis: 33.33%;
+  margin: 0;
+  padding: 10px;
+}
+
+.grid-item-decor .card-title {
+  font-family: "Montserrat - Ultra Light";
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.grid-item-decor .card-description {
+  color: #c7b299;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.grid-item-decor::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 2px;
+  margin: 20px auto 0;
+  background-color: #ffffff;
+}
+
+.grid-services .grid-item-decor::after {
+  background-color: #f1eee9;
+}
+
+.grid-services .card-title {
+  color: #555555;
+  font-family: "Raleway - Semi Bold";
+  font-size: 22px;
+  font-weight: 400
+}
+
+.grid-posts .grid-item-is-active {
+
+}
+.grid-gap-lg {
+  display: flex;
+}
+
+.grid-gap-lg {
+  margin: 0 -40px;
+}
+
+.grid-gap-lg > * {
+  padding: 0 40px;
+}
+
+.grid-posts .grid-item {
+  padding: 15px;
+}
+
+.grid-clients .grid-item {
+  padding: 0 40px;
+}
+
+.grid-gap-top {
+  color: #ffffff;
+  text-align: left;
+  margin-left: 15px;
+}
+
+.grid-gap-middle .grid-item {
+  text-align: left;
+  padding: 0 15px;
+}
+
+.grid-dribbble .grid-item {
+  padding: 5px;
+}
+

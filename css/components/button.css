@@ -30,11 +30,20 @@
 }
 
 .button-secondary {
-  background-color: #ffffff;  
+  color: #8c8c8c;
+  border-radius: 3px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
 }
 
 .button-secondary:hover {
-  background-color: rgba(17, 17, 17, 0.7);  opacity: 0.85;
+  color: #ffffff;
+  background-color: #998675;  opacity: 0.9;
+}
+
+.button-secondary-is-active {
+  color: #ffffff;
+  background-color: #998675;
 }
 
 .button-large {
